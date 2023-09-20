@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">               
+    <title>A2Z | Australia's Leading Recycler</title>
+    <link rel="stylesheet" href="style/main.css">
+    <meta name="author" content="Nataliia Petrychuk, shadowpn@gmail.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
+    <header>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="images/Logo_A2Z.jpg" alt="A2Z logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">            
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" id="current">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html">About company</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link" href="industrial.html">Industrial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Индикаторы слайдов -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ul>        
+            <!-- Слайды -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/alfonso-navarro-qph7tJfcDys-unsplash.jpg" alt="recycling 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/jasmin-sessler-CIItgnBEOgw-unsplash.jpg" alt="recycling 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/jisu-han--LQJ7fB9amY-unsplash.jpg" alt="recycling 3">
+                </div>
+            </div>       
+            <!-- Управление -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <div class="container">
+            <div class="col-md-12">
+            <div class="row">
+                <!-- Первый блок - заголовок и текст -->
+                <div class="col-md-6">
+                    <h1>Who is A2Z recycling?</h1>
+                    <p>Our commitment to quality service and reliable equipment ensures that our bins meet safety and hygiene standards, while
+                    promoting recycling and reducing waste. Trust us to provide a competitive quote for bin hire with no hidden fees or
+                    charges, making waste management easy and stress-free for your construction or industrial project.</p>
+                    <a href="contact_us.html" class="btn btn-primary">Contact Us</a>
+
+
+                </div>
+                <!-- Второй блок - контейнер с фотографией -->
+                <div class="col-md-6">
+                    <div class="container">
+                        <img src="images/elly-filho-prFmxl4FPP4-unsplash.jpg" alt="about A2Z" class="img-fluid">
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </main>
     
 </body>
 </html>

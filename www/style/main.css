@@ -1,0 +1,131 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to left, #fff, #b0c3a4);
+}
+/*--- navigation bar ---*/
+.navbar {
+  background: linear-gradient(to right, #fff, #b0c3a4);
+  padding-left: 20px;
+}
+.nav-link,
+.navbar-brand {
+  color: #627329 !important;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 600;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #323a2b;
+  text-decoration: underline;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+#current {
+  color: #326c05;
+  text-decoration: underline;
+}
+.header {
+  height: 970px;
+  background-image: url("../images/alfonso-navarro-qph7tJfcDys-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* CSS-стили для карусели */
+.carousel-item {
+  width: 600px; /* Задайте желаемую ширину слайдов */
+  height: 600px; /* Задайте желаемую высоту слайдов */
+  overflow: hidden; /* Обрезание изображения, которое выходит за пределы размеров слайда */
+}
+.carousel-item img {
+  width: 100%; /* Чтобы изображение полностью заполнило слайд без искажения пропорций */
+  height: 100%; /* Чтобы изображение полностью заполнило слайд без искажения пропорций */
+  object-fit: cover; /* Масштабирование изображения, чтобы оно заполняло рамку слайда без искажений */
+}
+/* Основные стили для блока */
+.container {
+  margin-top: 20px;
+}
+
+/* Стили для первого блока - заголовок и текст */
+.col-md-6:nth-child(1) {
+  background-color: #f5f5f5; /* Цвет фона */
+  padding: 20px;
+  border-radius: 10px;
+}
+.col-md-12 {
+  background-color: #f5f5f5; /* Цвет фона */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px; /* Отступ сверху */
+}
+/* Стили для второго блока - контейнер с фотографией */
+.col-md-6:nth-child(2) {
+  text-align: center; /* Выравнивание содержимого по центру */
+}
+/* Стили для текста заголовка */
+h1 {
+  font-size: 50px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  text-align: center;
+  padding: 50px 0 50px auto;
+  color:#627329
+}
+/* Стили для текста описания */
+p {
+  font-size: 24px;
+  padding: 50px 30px;
+  padding-bottom: 100px;
+  margin-left: 40px;
+}
+.btn.btn-primary {
+  align-items: center;
+  background-color: #627329;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center; /* Горизонтальное выравнивание по центру */
+  align-items: center; 
+  margin: 0 100px;
+  height: 50px;
+  font-size: 20px;
+  border-color: #627329;
+}
+.btn.btn-primary:hover{
+  background-color: #fff;
+  color: #627329;
+  border-color: #627329;
+}
+
+/* Чтобы адаптировать размер слайдов для мобильных устройств, добавьте медиа-запросы */
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 100%; /* Измените ширину слайдов для мобильных устройств */
+    height: auto; /* Измените высоту слайдов для мобильных устройств */
+  }
+  .col-md-6 {
+    width: 100%; /* Установите ширину блока на 100% на мобильных устройствах */
+    margin-bottom: 20px;
+  }
+  .col-md-12 {
+    padding: 10px; /* Уменьшение отступа на мобильных устройствах */
+  }
+  /* Дополнительные стили для мобильных устройств, если необходимо */
+  .col-md-6:nth-child(1) {
+    background-color: transparent; /* Уберите цвет фона на мобильных устройствах */
+    padding: 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
