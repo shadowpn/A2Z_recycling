@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="js/main.js"></script>
-
     </head>
+    <body>
     <header>
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html"><img src="images/Logo_A2Z.jpg" alt="A2Z logo"></a>
@@ -78,7 +79,7 @@
                 <!-- Первый блок - заголовок и текст -->
                 <div class="col-md-6">
                     <h1>Who is A2Z recycling?</h1>
-                    <p>Our commitment to quality service and reliable equipment ensures that our bins meet safety and hygiene standards, while
+                    <p class="whois">Our commitment to quality service and reliable equipment ensures that our bins meet safety and hygiene standards, while
                     promoting recycling and reducing waste. Trust us to provide a competitive quote for bin hire with no hidden fees or
                     charges, making waste management easy and stress-free for your construction or industrial project.</p>
                     <a href="contact_us.html" class="btn btn-primary">Contact Us</a>
@@ -153,7 +154,7 @@
                 <!-- Второй блок -->
                 <div class="col-md-4">
                     <div class="text-center">
-                        <h3>No polystyrene foam & plastic</h3>
+                        <h3>No polystyrene foam <br> & plastic</h3>
                         <img src="images/images.jpeg" alt="Polystyrene foam" class="img-fluid">
                         <p>Polystyrene foam, plastic "to-go" containers and cups are made of non-recyclable materials, and are not acceptable in
                         the curbside recycling program.</p>
@@ -170,70 +171,84 @@
             </div>
         </div>
         <div class="container">
-            <h2>Testimonials</h2>
             <div class="testimonials">
-                <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card visible">
-                                <img src="image1.jpg" class="card-img-top" alt="User 1">
-                                <div class="card-body">
-                                    <p class="card-text">“Thamesdown and Vanden Recycling have been working together for over 5 years now and we’ve developed a great working,
-                                    trusting relationship. All of the staff are helpful and considerate to your needs as well as being able to offer great
-                                    advice when it is required. With such a great, family-like relationship we look forward to working alongside the Vanden
-                                    team in the years to come. Vanden are a credit to the plastic recycling industry”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card visible">
-                                <img src="image2.jpg" class="card-img-top" alt="User 2">
-                                <div class="card-body">
-                                    <p class="card-text">“The good thing being with Vanden is polyethylene is recycled and we know Vanden are dealing with this in a responsible
-                                    manner….We used to do all our recycling ourselves with our own granulator which is a laborious and slow process and
-                                    since we’ve been on board with Vanden we’ve managed to eliminate a full process”</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <img src="image3.jpg" class="card-img-top" alt="User 3">
-                                <div class="card-body">
-                                    <p class="card-text">Testimonial text from User 3.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <img src="image4.jpg" class="card-img-top" alt="User 4">
-                                <div class="card-body">
-                                    <p class="card-text">Testimonial text from User 4.</p>
-                                </div>
-                            </div>
+                <h2 class="text-center">Testimonials</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="testimonial-card">
+                            <p>“The invoicing process is straightforward and there are no delays which makes it easy to tidy up with no chase ups.”<br><br> <strong>Ema Barton</strong></p>        
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="col-md-3">
+                        <div class="testimonial-card">
+                            <p>“I have found the service provided by A27Z recycling very reliable and more importantly immensely helpful in assisting our sites
+                            meet our company environmental goals and values.” <br><br> <strong>Jon Smitt</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="testimonial-card">
+                            <p>“They are really helpful and always looking for feedback on their services to help them continuously improve. The entire
+                            site feels a sense of accomplishment knowing they are helping the environment through the recycling service Vanden are
+                            able to provide.” <br><br> <strong>Nataliia P</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="testimonial-card">
+                            <p>“The times I have spoken with A27Z recycling they have been very helpful and provide a reliable service, allowing us to dispose
+                            of our waste in an environmentally sustainable manner”<br><br> <strong>Mark Jackson</strong></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </div>        
         </div>
     </main>
-    <footer>
-
-    </footer> 
+    <footer class="container">
+        <div class="row" id="main_footer">
+            <div class="col-md-4 logo_footer">
+                <a class="footer_logo" href="index.html"><img src="images/Logo_small.jpg" height="120" alt="logo footer"></a>
+            </div>
+            <div class="col-md-4 links_menu">
+                <ul>
+                    <li><a href="about_us.html">About company</a></li>
+                    <li><a href="industial.html">Industrial</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="privacy_policy.html">Privacy policy</a></li>
+                </ul>
+                <div class="social">
+                    <a href="https://www.facebook.com/a27zrecycling" target="_blank">
+                        <img src="images/free-icon-facebook-4494475.png" width="30" height="30" alt="Facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com/a27zrecycling" target="_blank">
+                        <img src="images/free-icon-instagram-4494488.png" width="30" height="30" alt="Instagram icon">
+                    </a>
+                    <a href="https://twitter.com/a27z" target="_blank">
+                        <img src="images/free-icon-twitter-4494477.png" width="30" height="30" alt="Twitter icon">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 contact_us">
+                <address class="address">
+                    <p>Contact us:</p>
+                    <p>Email: <a href="mailto:info@a27zrecycling.com.au">info@a27zrecycling.com.au</a></p>
+                    <p>Phone: +1-123-456-7890</p>
+                    <p>Address: 123 Main Street, 2000, Sydney</p>
+                </address>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <span>Nataliia Petrychuk© All Rights Reserved 2010-2023</span>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery, Popper.js, и Bootstrap JS (все скрипты в одном месте) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha384-KyZXEAg3QhqLMpG8r+6h5u5vUj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-hz07T2sjA5Pz4JZf+ibCb8AyfF8r+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
