@@ -223,12 +223,117 @@ body {
     
     color: #333;
     font-size: 16px;
-    font-style: italic;
+    font-style: normal;
     font-weight: 600;
     margin: 0;
     padding-bottom: 50px;
     overflow: hidden;
 }
+.footer-logo img {
+  padding-left: 50px;
+  border-radius: 5px;
+}
+/* Убрать подчеркивание и изменить цвет при наведении на ссылки */
+.links-menu ul li a {
+    text-decoration: none;
+    color: #333; /* Цвет ссылок по умолчанию */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+    font-size: 20px;
+    margin-left: 75px;
+  }
+.links-menu ul li a:hover {
+    color: #326c05;
+    text-decoration: underline; /* Новый цвет при наведении */
+}
+/* Убрать маркеры списков */
+.links-menu ul {
+    list-style: none;
+    padding: 0; /* Убрать внутренние отступы */  
+  }
+/* Создать равное расстояние между иконками социальных сетей */
+.social {
+    display: flex; /* Сделать контейнер flex-контейнером */
+    justify-content: space-evenly; /* Равное распределение между элементами */  
+  }
+/* Выравнивание иконок по центру */
+.social a {
+    justify-items: center;
+    padding: 20px 0;
+}
+/* Отступы от списков и соцсетей */
+.links-menu ul,
+.social {
+    margin: 0; /* Убрать внешние отступы */
+    padding: 0; /* Убрать внутренние отступы */
+}
+
+/* Стили для иконок социальных сетей */
+.social a img {
+    width: 30px; /* Задать ширину иконок */
+    height: 30px; /* Задать высоту иконок */
+}
+.col-md-4.contact-us p {
+ padding: 0;
+ font-size: 18px;
+}
+/* Стили для новостного контейнера */
+.news-container {
+    width: 80%; /* Ширина блока меньше основного контейнера */
+    margin: 0 auto; /* Центрирование блока */
+}
+
+/* Стили для новостного контейнера */
+.news-container {
+    width: 80%; /* Ширина блока меньше основного контейнера */
+    margin: 0 auto; /* Центрирование блока */
+}
+
+/* Стили для новостных блоков */
+.news-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.news-image {
+    flex: 1;
+    max-width: 25%; /* Ширина изображения - 1/4 блока */
+}
+
+.news-content {
+    flex: 3; /* Остальная ширина блока */
+    padding: 10px;
+}
+
+/* Стили для горизонтальной линии между блоками */
+.news-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 20px 0;
+}
+
+/* Стили для изображений в новостных блоках */
+.news-image {
+    width: 200px; /* Фиксированная ширина блока для изображения */
+    height: 200px; /* Фиксированная высота блока для изображения */
+    display: inline-block; /* Позволяет элементам размещаться горизонтально */
+    vertical-align: top; /* Размещение блоков в верхней части контейнера */
+    margin-right: 10px; /* Расстояние между блоками */
+    overflow: hidden; /* Обрезаем изображение, если оно больше блока */
+    box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+}
+.news-image img {
+    width: 100%; /* Масштабируем изображение по ширине блока */
+    height: auto; /* Сохраняем соотношение сторон */
+}
+span {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
 
 /* Чтобы адаптировать размер слайдов для мобильных устройств, добавьте медиа-запросы */
 @media (max-width: 768px) {
