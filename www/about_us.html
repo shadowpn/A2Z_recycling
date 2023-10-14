@@ -4,21 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>A2Z | Australia's Leading Recycler</title>
-    <link rel="stylesheet" href="style/main.css">
+    <title>About us | Australia's Leading Recycler</title>
     <meta name="author" content="Nataliia Petrychuk, shadowpn@gmail.com">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light">
@@ -31,235 +27,88 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about_us.html" id="current">About</a>
+                        <a class="nav-link" href="about_us.html" id="current">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="industrial.html">Industrial</a>
+                        <a class="nav-link" href="industrial.html">INDUSTRIAL</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        <a class="nav-link" href="contact_us.html">CONTACT US</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <div class="about-us">
-           <img src="images/about_new.jpg" width="" height="" alt="About our team">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/about_new.jpg" alt="About us">
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div class="col-md-12">
+        <section class="about-us">
+            <div class="container">
+                <h1>About A27Z RECYCLERS</h1>
+                <p>Overconsumption and a throwaway culture have led to a global waste crisis. While even complex rubbish
+                    is
+                    technically
+                    recyclable, most materials are not profitable to recycle. As a result, waste piles up in landfills
+                    and
+                    pollutes our
+                    planet while virgin materials are extracted from the earth to create new products.
+                    At A27Z RECYCLERS, our mission is Eliminating the Idea of Waste®. Businesses, government entities,
+                    and
+                    people like you work
+                    with us globally to keep rubbish out of landfills or from incineration.
+                    Through collaboration and innovation, we've developed the world's first solutions in everything from
+                    recycling to reuse.</p>
+            </div>
+        </section>
+
+        <div class="features">
+            <div class="container">
                 <div class="row">
-                    <!-- Первый блок - заголовок и текст -->
-                    <div class="col-md-6">
-                        <h1>Who is A2Z recycling?</h1>
-                        <p class="whois">Our commitment to quality service and reliable equipment ensures that our bins
-                            meet safety and hygiene standards, while
-                            promoting recycling and reducing waste. Trust us to provide a competitive quote for bin hire
-                            with no hidden fees or
-                            charges, making waste management easy and stress-free for your construction or industrial
-                            project.</p>
-                        <a href="contact_us.html" class="btn btn-primary"></a>
+                    <div class="col-md-4 feature">
+                        <img src="images/our_mission.jpg" alt="our mission" class="img-fluid">
+                        <div class="feature-text">
+                            <h2>Our Mission and Vission</h2>
+                            <p>At A2Z recyclers we understand the connection between a heplthy planet and good recycling
+                                habits. We aim to make our
+                                earth green and inculcate recycling as a habit, not a practice. To promote recycling
+                                habits in every household and business organisation.</p>
+                        </div>
                     </div>
-                    <!-- Второй блок - контейнер с фотографией -->
-                    <div class="col-md-6">
-                        <div class="container">
-                            <img src="images/elly-filho-prFmxl4FPP4-unsplash.jpg" alt="about A2Z" class="img-fluid">
+                    <div class="col-md-4 feature">
+                        <img src="images/Career.jpg" alt="career" class="img-fluid">
+                        <div class="feature-text">
+                            <h2>Careers</h2>
+                            <p>Our mission lives within every team member, and our passion can be seen in everything we
+                                touch. Browse the growing
+                                list of career and internship opportunities available at A27Z.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 feature">
+                        <img src="images/our_office.jpg" alt="Our offices" class="img-fluid">
+                        <div class="feature-text">
+                            <h2>Our offices</h2>
+                            <p>You’ll find A27Z recycling team members across the globe, with offices in the United
+                                States, Canada, Brazil, UK,
+                                Europe, China, South Korea, Japan and Australia, plus our Global Foundation in Thailand.
+                                These unique offices all
+                                incorporate upcycled, recycled, or reused materials, while our Trenton headquarters’
+                                walls are also covered in ever-changing
+                                graffiti.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid my-5">
-            <div class="container-fluid bg-primary text-white text-center py-3">
-                <h2>What We Recycle</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6 text-center">
-                    <div class="rounded-circle-img">
-                        <div class="d-flex align-items-center justify-content-center rounded-circle-inner">
-                            <img src="images/john-cameron-7zocFMzvbpc-unsplash.jpg" alt="Фотография 1"
-                                class="img-fluid rounded-circle">
-                        </div>
-                    </div>
-                    <h3 class="text-center-block">Stadium Chairs</h3>
-                    <button class="btn btn-primary btn-book-collection">Book collection</button>
-                </div>
-                <div class="col-md-3 col-6 text-center">
-                    <div class="rounded-circle-img">
-                        <div class="d-flex align-items-center justify-content-center rounded-circle-inner">
-                            <img src="images/john-cameron-aAmUEXvX1bQ-unsplash.jpg" alt="Фотография 2"
-                                class="img-fluid rounded-circle">
-                        </div>
-                    </div>
-                    <h3 class="text-center-block">Baterries</h3>
-                    <button class="btn btn-primary btn-book-collection">Book collection</button>
-                </div>
-                <div class="col-md-3 col-6 text-center">
-                    <div class="rounded-circle-img">
-                        <div class="d-flex align-items-center justify-content-center rounded-circle-inner">
-                            <img src="images/john-cameron-NenIuYCAmx8-unsplash.jpg" alt="Фотография 3"
-                                class="img-fluid rounded-circle">
-                        </div>
-                    </div>
-                    <h3 class="text-center-block">Bins</h3>
-                    <button class="btn btn-primary btn-book-collection">Book collection</button>
-                </div>
-                <div class="col-md-3 col-6 text-center">
-                    <div class="rounded-circle-img">
-                        <div class="d-flex align-items-center justify-content-center rounded-circle-inner">
-                            <img src="images/john-cameron-NenIuYCAmx8-unsplash.jpg" alt="Фотография 4"
-                                class="img-fluid rounded-circle">
-                        </div>
-                    </div>
-                    <h3 class="text-center-block">Lamps</h3>
-                    <button class="btn btn-primary btn-book-collection">Book collection</button>
-                </div>
-            </div>
-            <div class="container text-center mt-5">
-                <button class="btn btn-primary btn-read-more">Read more</button>
-            </div>
-        </div>
-        <div class="container mt-5">
-            <h2 class="text-center">Not acccepted recycling</h2>
-            <div class="row">
-                <!-- Первый блок -->
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <h3>No bagged <br> recyclables</h3>
-                        <img src="images/download.jpeg" alt="bag recyclables" class="img-fluid">
-                        <p>Do not bag recyclables. They must be loose in the bin. If you collect your recyclables in a
-                            bag, empty them directly
-                            into your bin and reuse the bag!</p>
-                    </div>
-                </div>
-                <!-- Второй блок -->
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <h3>No polystyrene foam <br> & plastic</h3>
-                        <img src="images/images.jpeg" alt="Polystyrene foam" class="img-fluid">
-                        <p>Polystyrene foam, plastic "to-go" containers and cups are made of non-recyclable materials,
-                            and are not acceptable in
-                            the curbside recycling program.</p>
-                    </div>
-                </div>
-                <!-- Третий блок -->
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <h3>No medical <br> waste</h3>
-                        <img src="images/Screenshot_5.jpg" alt="Medical waste" width="225" height="224"
-                            class="img-fluid">
-                        <p>Medical waste can pose a safety hazard and never goes in curbside recycling or waste bins.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="news-container">
-            <h1 class="text-center">News</h1>
-            <hr>
-            <div class="news-block">
-                <div class="news-image">
-                    <img src="images/auatralia_recycling.jpg" alt="Australia’s plastics recycling">
-                </div>
-                <div class="news-content">
-                    <h4>New technology could boost Australia’s plastics recycling</h4>
-                    <p>Envirotech company Samsara Eco has developed an enzyme that breaks down plastic, known as a
-                        polymer, into its original
-                        building blocks, or monomers, for reuse to manufacture new food-grade plastics and polyester.
-                        Australia currently recycles 16% of its plastic waste, with less than 3% making it to market
-                        domestically. This falls
-                        far short of the stated national goal of “70% of plastic waste recycled by 2050.” <a
-                            href="https://www.themandarin.com.au/197250-new-technology-could-boost-australias-plastics-recycling/"
-                            target="_blank"> read more</a></p>
-                    <p>by Dan Holmes | University of Sydney</p>
-                    <p>August 17, 2022</p>
-                </div>
-            </div>
-            <div class="news-divider"></div>
-            <div class="news-block">
-                <div class="news-image">
-                    <img src="images/naja-bertolt-jensen-BJUoZu0mpt0-unsplash.jpg" alt="Фотография новости 2">
-                </div>
-                <div class="news-content">
-                    <h4>Revolutionary Australian battery recycling technology startup advances its breakthrough battery
-                        metals recovery process</h4>
-                    <p>Australian battery recycling technology company, Battery Pollution today revealed a co-operaton
-                        agreement with
-                        Australia’s University of Newcastle focussed on the development of proprietary processes for the
-                        recovery of cobalt,
-                        lithium, graphite and nickel from spent Electric Vehicle and Energy Storage System batteries. <a
-                            href="https://www.newcastle.edu.au/newsroom/featured/revolutionary-australian-battery-recycling-technology-startup-advances-its-breakthrough-battery-metals-recovery-process">
-                            read more</a></p>
-                    <p>by Nataliia Petrychuk | Tafe Ultimo</p>
-                    <p>Tuesday, 6 June 2023</p>
-                </div>
-            </div>
-            <div class="news-divider"></div>
-            <div class="news-block">
-                <div class="news-image">
-                    <img src="images/MIT-Plastics-Recycling-01-press_0.jpg" alt="efficient plastics recycling">
-                </div>
-                <div class="news-content">
-                    <h4>New process could enable more efficient plastics recycling</h4>
-                    <p>The accumulation of plastic waste in the oceans, soil, and even in our bodies is one of the major
-                        pollution issues of
-                        modern times, with over 5 billion tons disposed of so far. Despite major efforts to recycle
-                        plastic products, actually
-                        making use of that motley mix of materials has remained a challenging issue. <br> A key problem
-                        is that plastics come in so many different varieties, and chemical processes for breaking them
-                        down into a
-                        form that can be reused in some way tend to be very specific to each type of plastic.<a
-                            href="https://news.mit.edu/2022/plastics-recycling-cobalt-catalyst-1006"
-                            target="_blank">read more</a></p>
-                    <p>by David L. Chandler | MIT News Office</p>
-                    <p>October 6, 2022</p>
-                </div>
-            </div>
-            <hr>
         </div>
 
-        <div class="container">
-            <div class="testimonials">
-                <h2 class="text-center">Testimonials</h2>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="testimonial-card">
-                            <p>“The invoicing process is straightforward and there are no delays which makes it easy to
-                                tidy up with no chase ups.”<br><br> <strong>Ema Barton</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="testimonial-card">
-                            <p>“I have found the service provided by A27Z recycling very reliable and more importantly
-                                immensely helpful in assisting our sites
-                                meet our company environmental goals and values.” <br><br> <strong>Jon Smitt</strong>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="testimonial-card">
-                            <p>“They are really helpful and always looking for feedback on their services to help them
-                                continuously improve. The entire
-                                site feels a sense of accomplishment knowing they are helping the environment through
-                                the recycling service Vanden are
-                                able to provide.” <br><br> <strong>Nataliia P</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="testimonial-card">
-                            <p>“The times I have spoken with A27Z recycling they have been very helpful and provide a
-                                reliable service, allowing us to dispose
-                                of our waste in an environmentally sustainable manner”<br><br> <strong>Mark
-                                    Jackson</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </main>
     <footer class="container">
         <div class="row" id="main_footer">

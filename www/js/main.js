@@ -1,6 +1,13 @@
-    $(document).ready(function(){
-        $('#carouselTestimonials').carousel() // Инициализация карусели
-    })
+
+  $(document).ready(function() {
+    // Инициализация карусели
+    $("#carouselInterval").carousel({
+      interval: 3000, // Интервал между перелистываниями в миллисекундах (например, 3000 мс = 3 секунды)
+      wrap: true, // Включить бесконечное перелистывание
+    });
+  });
+
+    
     // Функция для установки одинаковой высоты карточкам Testimonials
     function setEqualCardHeight() {
         const testimonialCards = document.querySelectorAll('.testimonial-card');
