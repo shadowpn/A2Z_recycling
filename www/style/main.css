@@ -44,16 +44,30 @@ body {
   height: 700px; /* Автоматически рассчитывать высоту на основе ширины и соотношения сторон изображения */
   overflow: hidden; /* Обрезание изображения, которое выходит за пределы размеров слайда */
 }
-
 .carousel-inner {
   margin: 0;
   overflow: hidden;
 }
-
 .carousel-item img {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+/*Video*/
+#myCarousel .carousel-inner {
+    width: 100%;
+    height: 75vh; /* Это устанавливает высоту слайдера на всю высоту экрана */
+    overflow: hidden;
+}
+#myCarousel .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+#myCarousel video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /* Стили для первого блока - заголовок и текст */
 .col-md-6:nth-child(1) {
@@ -325,60 +339,97 @@ span {
   margin-bottom: 15px;
   font-weight: 600;
 }
+.col-md-4.contact-us a
+{
+  color: #323a2b;
+  font-weight: 600;
+}
+.col-md-4.contact-us P {
+   margin-bottom: 10px;
+}
 
 /* Style for the "About Us" section */
 .about-us {
     background-color: #f0f0f0;
-    padding: 50px 0;
+    
 }
-/* Style for the "Features" section */
-.features {
-    padding: 50px 0;
+.about-us h1 {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.about-us p {
+  padding-bottom: 50px
+}
+.simpleCardsContent_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding-top: 70px;
+  margin-bottom: 20px; /* Небольшие отступы между блоками */
 }
 
-/* Style for feature blocks */
-.feature {
-    text-align: center;
+.simpleCardsContent_block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Расстояние между фотографией и текстом */
+  text-align: left; /* Выравнивание текста по левому краю блока */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.simpleCardsContent_img {
+  width: 100%;
+  padding-bottom: 75%; /* Сохранение пропорций изображений (4:3) */
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -20px; /* Небольшие отступы между блоками */
+}
+
+.simpleCardsContent_img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполнение всей площади изображения */
+}
+
+.simpleCardsContent_content {
+  background-color: rgba(255, 255, 255, 0.9); /* Прозрачный белый фон для текстового блока */
+  padding: 25px; /* Поля вокруг текстового блока */
+  text-align: left; /* Выравнивание текста по левому краю блока */
+  width: 80%; /* Ширина текстового блока чуть меньше блока с фотографией */
+  margin-top: -50px; /* Для наложения текстового блока на фотографию */
+  z-index: 2; /* Чтобы текст был над фотографией */
+  align-items: center;
+}
+/*Block trust and resposible*/
+.trusted-and-responsible {
+    background-color: #f7f7f7;
+    padding: 40px 0;
     margin-bottom: 30px;
 }
-
-/* Style for feature images */
-.feature img {
-    width: 100%;
-    height: auto;
-}
-
-/* Style for feature headings */
-.feature h2 {
+.trusted-and-responsible .section-title {
+    text-align: center;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
-/* Style for feature paragraphs */
-.feature p {
-    font-size: 16px;
+.trusted-and-responsible .row {
+    display: flex;
+    justify-content: center; /* Выравнивание элементов по центру по горизонтали */
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
 }
-
-/* Style for feature inner containers */
-.feature-inner {
-    overflow: hidden;
-    position: relative;
+.trusted-and-responsible .col-12 {
+    flex: 0 0 auto; /* Оставить ширину элемента по его содержимому */
+    margin: 10px; /* Небольшие отступы между изображениями */
 }
-
-/* Style for feature text */
-.feature-text {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    opacity: 1;
-    transition: opacity 0.3s ease, bottom 0.3s ease;
+.trusted-and-responsible img.trust-image {
+    max-width: 100%; /* Гарантировать, что изображение не будет превышать ширину родительской колонки */
+    height: auto; /* Поддерживать пропорции при изменении ширины */
+    object-fit: cover; /* Заполнение всей области изображения */
+    display: block; /* Убрать лишние промежутки вокруг изображения */
 }
-
-
-
 /* Чтобы адаптировать размер слайдов для мобильных устройств, добавьте медиа-запросы */
 @media (max-width: 768px) {
   .carousel-item {
