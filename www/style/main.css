@@ -14,8 +14,9 @@ body {
 .navbar-brand {
   color: #627329 !important;
   cursor: pointer;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .nav-link {
   margin-right: 1em !important;
@@ -32,8 +33,6 @@ body {
   text-decoration: underline;
 }
 .header {
-  height: 970px;
-  background-image: url("../images/alfonso-navarro-qph7tJfcDys-unsplash.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -111,38 +110,30 @@ body {
   height: 50px;
   font-size: 20px;
   border-color: #627329;
+  color: #fff;
 }
 .btn.btn-primary:hover{
   background-color: #fff;
   color: #627329;
   border-color: #627329;
 }
-.btn-read-more {
-  margin-top: 20px; /* Увеличьте отступ сверху для кнопки "Read more" */
-}
-/*блок с What We Recycle */
+
 /* Стили для круглых фотографий */
-.rounded-circle-img {
+.rounded-circle-container {
   width: 350px; /* Задайте желаемую ширину и высоту для контейнера круглых фотографий */
   height: 350px;
+  margin: 0 auto; /* Center horizontally */
   display: flex;
   justify-content: center;
-  align-items: center !important;
+  align-items: center;
   border-radius: 50%;
   overflow: hidden; /* Обрезаем изображение, чтобы оно заполнило всю область круга */
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
-.rounded-circle-inner {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center !important;
-}
-.rounded-circle-img img {
+.rounded-circle-container img {
   width: 100%; /* Заполните 100% ширины и высоты контейнера */
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 /* Стили для центрирования заголовков и кнопок */
 .text-center-block {
@@ -155,8 +146,7 @@ body {
   padding-top: 50px;
 }
 .container.text-center.mt-5 {
-  padding-bottom: 40px !important;
-  
+  padding-bottom: 40px !important;  
 }
 .container-fluid.my-5 h2 {
   text-align: center !important;
@@ -195,6 +185,16 @@ body {
   display: block;
   margin: 0 auto;
 }
+.news-content a {
+ color:#616f32;
+ text-decoration: none;
+ font-weight: 600;
+}
+.news-content a:hover {
+ text-decoration: underline;
+ font-weight: 600;
+}
+
 /* Стили для блока Testimonials */
   .testimonials {
     padding: 20px;
@@ -215,15 +215,14 @@ body {
     background-color: #fff;
      /* Устанавливаем фоновый цвет карточки */   
 }
-.testimonials h2 {
+.testimonials h2, .news-container h2, .trusted-and-responsible h2 {
     font-size: 45px !important;
-    color: #627329;
+    color: #627329 !important;
     margin-top: 30px;
     padding-bottom: 20px;
 }
 /* Стили для текста внутри блока Testimonials */
-.testimonial-card p {
-    
+.testimonial-card p {  
     color: #333;
     font-size: 16px;
     font-style: normal;
@@ -336,8 +335,7 @@ span {
   text-decoration: none;
 }
 .col-md-4.contact-us P {
-   margin-bottom: 10px;
-   
+   margin-bottom: 10px;   
 }
 /* Style for the "About Us" section */
 .about-us {
@@ -427,7 +425,7 @@ span {
     display: flex;
     align-items: center;
     width: 80%;
-    margin-left: 150px;
+    margin-left: 250px;
     border-radius: 20px;
     background: linear-gradient(to right, #fff, #b0c3a4);
     /* Устанавливаем фиксированные размеры для блока */
@@ -444,10 +442,14 @@ span {
     height: 100%;
     object-fit: cover; /* Заполнение всей области изображения без искажений */
 }
+.textWithImage_img {
+  padding-left: 100px;
+ 
+}
 .textWithImage_text {
     flex: 1;
     max-width: 555px; /* Максимальная ширина текстового блока */
-    padding: 0 20px;
+    padding: 0 50px;
     color: #627329; 
 }
 .textWithImage_title {
@@ -455,7 +457,7 @@ span {
     margin-bottom: 10px;
 }
 .textWithImage_body {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -479,6 +481,33 @@ span {
   font-weight: 600;
   border-color: 1px solid #627329;
 }
+.col-md-6 h3 {
+  margin: 30px 0 20px 0;
+  font-size: 35px !important;
+  color: #627329 !important;
+}
+.col-md-6 p {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 0;  
+}
+.col-md-6 a{
+  color: #627329;
+}
+.address li {
+  text-align: left;
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  list-style-type: none;
+}
+.map-responsive {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
 /*Banner industrial*/
 .banner {
     width: 100%;
@@ -490,8 +519,7 @@ span {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Обрезать изображение, сохраняя пропорции */
-    display: block;
-    
+    display: block;   
 }
 
 /* Чтобы адаптировать размер слайдов для мобильных устройств, добавьте медиа-запросы */
