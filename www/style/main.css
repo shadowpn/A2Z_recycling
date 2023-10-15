@@ -53,7 +53,6 @@ body {
   height: auto;
   object-fit: contain;
 }
-
 /*Video*/
 #myCarousel .carousel-inner {
     width: 100%;
@@ -131,8 +130,7 @@ body {
   align-items: center !important;
   border-radius: 50%;
   overflow: hidden; /* Обрезаем изображение, чтобы оно заполнило всю область круга */
-  margin-bottom: 40px;
-  
+  margin-bottom: 40px; 
 }
 .rounded-circle-inner {
   width: 100%;
@@ -171,7 +169,6 @@ body {
   display: block !important;
   width: 200px;
 }
-
 /* Центрирование кнопки "Read more" */
 .btn-read-more {
   margin: 0 auto !important;
@@ -183,7 +180,6 @@ body {
 .text-center {
   text-align: center;
 }
-
 /* Стили для заголовков */
 .container.mt-5 h2 {
   margin-top: 20px;
@@ -194,17 +190,13 @@ body {
 .container.mt-5 h3 {
   margin-bottom: 30px !important; 
 }
-
 /* Стили для изображений */
 .img-fluid {
   display: block;
   margin: 0 auto;
 }
-/* Стили для текста */
-
 /* Стили для блока Testimonials */
   .testimonials {
-   
     padding: 20px;
     width: 100%; /* Установите ширину блока в 100% ширины экрана */
     max-width: none; /* Уберите ограничение максимальной ширины, если оно есть */
@@ -221,8 +213,7 @@ body {
     border: 1px solid #333; /* Добавляем бордер к карточке */
     border-radius: 10px; /* Закругляем углы */
     background-color: #fff;
-     /* Устанавливаем фоновый цвет карточки */
-    
+     /* Устанавливаем фоновый цвет карточки */   
 }
 .testimonials h2 {
     font-size: 45px !important;
@@ -297,7 +288,6 @@ body {
     width: 80%; /* Ширина блока меньше основного контейнера */
     margin: 0 auto; /* Центрирование блока */
 }
-
 /* Стили для новостных блоков */
 .news-block {
     display: flex;
@@ -343,15 +333,15 @@ span {
 {
   color: #323a2b;
   font-weight: 600;
+  text-decoration: none;
 }
 .col-md-4.contact-us P {
    margin-bottom: 10px;
+   
 }
-
 /* Style for the "About Us" section */
 .about-us {
-    background-color: #f0f0f0;
-    
+    background-color: #f0f0f0;   
 }
 .about-us h1 {
   padding-top: 30px;
@@ -368,7 +358,6 @@ span {
   padding-top: 70px;
   margin-bottom: 20px; /* Небольшие отступы между блоками */
 }
-
 .simpleCardsContent_block {
   position: relative;
   width: 100%;
@@ -379,7 +368,6 @@ span {
   border-radius: 20px;
   overflow: hidden;
 }
-
 .simpleCardsContent_img {
   width: 100%;
   padding-bottom: 75%; /* Сохранение пропорций изображений (4:3) */
@@ -387,14 +375,12 @@ span {
   position: relative;
   margin-bottom: -20px; /* Небольшие отступы между блоками */
 }
-
 .simpleCardsContent_img img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover; /* Заполнение всей площади изображения */
 }
-
 .simpleCardsContent_content {
   background-color: rgba(255, 255, 255, 0.9); /* Прозрачный белый фон для текстового блока */
   padding: 25px; /* Поля вокруг текстового блока */
@@ -430,6 +416,84 @@ span {
     object-fit: cover; /* Заполнение всей области изображения */
     display: block; /* Убрать лишние промежутки вокруг изображения */
 }
+/*Block what we recycling */
+.textWithImage {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 100%);
+}
+.textWithImage_container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 150px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #fff, #b0c3a4);
+    /* Устанавливаем фиксированные размеры для блока */
+    width: 1457px; /* Ширина блока */
+    height: 441px; /* Высота блока */
+}
+.textWithImage_media {
+    flex: 0 0 541px; /* Фиксированная ширина изображения */
+    height: 334px; /* Высота изображения */
+    overflow: hidden; /* Обрезаем изображение, если оно превышает размер контейнера */
+}
+.textWithImage_media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполнение всей области изображения без искажений */
+}
+.textWithImage_text {
+    flex: 1;
+    max-width: 555px; /* Максимальная ширина текстового блока */
+    padding: 0 20px;
+    color: #627329; 
+}
+.textWithImage_title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.textWithImage_body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.textWithImage_button {
+  align-items: center;
+  background-color: #627329;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center; /* Горизонтальное выравнивание по центру */
+  align-items: center; 
+  margin: 0 100px;
+  height: 50px;
+  font-size: 20px;
+  border-color: #627329;
+  color: #fff;
+}
+.textWithImage_button:hover {
+  background-color: #fff;
+  color: #627329;
+  text-decoration: none;
+  font-weight: 600;
+  border-color: 1px solid #627329;
+}
+/*Banner industrial*/
+.banner {
+    width: 100%;
+    height: 250px; /* Установите желаемую высоту */
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обрезать изображение, сохраняя пропорции */
+    display: block;
+    
+}
+
 /* Чтобы адаптировать размер слайдов для мобильных устройств, добавьте медиа-запросы */
 @media (max-width: 768px) {
   .carousel-item {

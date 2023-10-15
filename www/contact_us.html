@@ -46,111 +46,94 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/about_new.jpg" alt="About us">
+                    <img src="images/Contact-us2.jpg" alt="Contact us">
                 </div>
             </div>
         </div>
         <section class="about-us">
             <div class="container">
-                <h1>About A27Z RECYCLERS</h1>
-                <p>Overconsumption and a throwaway culture have led to a global waste crisis. While even complex rubbish
-                    is
-                    technically
-                    recyclable, most materials are not profitable to recycle. As a result, waste piles up in landfills
-                    and
-                    pollutes our
-                    planet while virgin materials are extracted from the earth to create new products.
-                    At A27Z RECYCLERS, our mission is Eliminating the Idea of Waste®. Businesses, government entities,
-                    and
-                    people like you work
-                    with us globally to keep rubbish out of landfills or from incineration.
-                    Through collaboration and innovation, we've developed the world's first solutions in everything from
-                    recycling to reuse.</p>
+                <h1>Contact Us</h1>
+                <p>Have a question? Take a look at our Help Centre to see our most frequently asked questions.
+                
+                If you can't find what you're looking for you can contact us using the form below. Please note that our office is open
+                Monday to Friday, 9am to 5pm Australian Eastern Standard Time.</p>
             </div>
         </section>
 
-        <section class="section--grey">
-            <div class="simpleCards simpleCards_mobileScroll">
-                <div class="simpleCards_container container">
-                    <div class="simpleCards_row row">
-                        <div class="simpleCardsContent_item col-md-4 pb-md-5 mb-lg-5">
-                            <div class="simpleCardsContent_block">
-                                <div class="simpleCardsContent_img">
-                                    <img src="images/our_mission.jpg" alt="Our mission">
-                                    <div class="simpleCardsContent_overlay"></div>
-                                </div>
-                                <div class="simpleCardsContent_content">
-                                    <div class="simpleCardsContent_text">
-                                        <h4 class="simpleCardsContent_title"><strong>Our Mission and Vision</strong>
-                                        </h4>
-                                        At A2Z recyclers we understand the connection between a healthy planet and good
-                                        recycling habits. We aim to make our earth green and inculcate recycling as a
-                                        habit, not
-                                        a practice.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="mb-4">Drop us a line</h3>
+                <form id="inquiryForm" action="contact.html" method="post" onsubmit="return validateForm()" class="needs-validation"
+                    novalidate>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="item">Type of item to be picked up:</label>
+                        <input type="text" class="form-control" id="item" name="item" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Number of items to be picked up:</label>
+                        <input type="number" class="form-control" id="number" name="number" min="1" max="30" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Pick Up Booking Date:</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry">Inquiry:</label>
+                        <textarea class="form-control" id="inquiry" name="inquiry" required></textarea>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                
+            </div>
+            <div class="col-md-6">
+                <h3>We'd love to hear from you</h3>
+                <p>Following government guidelines and to protect the health of the TerraCycle team, we’re currently working remotely. For
+                a faster response, please use this contact form to get in touch via email. If you would like to speak to someone via
+                phone, you may call us on <a href="tel:0435123456">0435 123 456</a> and leave a message. We’ll get back to you as soon as possible.</p>
+                <p>We appreciate your patience and understanding at this time.</p>
+            </div>
+        </div>
+    </div>   
+    <div class="container mt-5">
+        <h3 class="text-center">Our office</h3>
+        <div class="map-responsive">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.0675624542678!2d144.7472343767074!3d-38.347418264726905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad4357b0e516369%3A0xf1dce538da37e359!2s42%20Holyrood%20Ave%2C%20Sorrento%20VIC%203943!5e0!3m2!1sen!2sau!4v1685507877192!5m2!1sen!2sau"
+                width="1000" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <section class="banner">
+        <img src="images/pick-up.jpeg" alt="pick-up">
+    </section>
 
-                        <div class="simpleCardsContent_item col-md-4 pb-md-5 mb-lg-5">
-                            <div class="simpleCardsContent_block">
-                                <div class="simpleCardsContent_img">
-                                    <img src="images/Career.jpg" alt="career">
-                                    <div class="simpleCardsContent_overlay"></div>
-                                </div>
-                                <div class="simpleCardsContent_content">
-                                    <div class="simpleCardsContent_text">
-                                        <h4 class="simpleCardsContent_title"><strong>Careers</strong></h4>
-                                        Our mission lives within every team member, and our passion can be seen in
-                                        everything we
-                                        touch. Browse the growing list of career and internship opportunities available.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="simpleCardsContent_item col-md-4 pb-md-5 mb-lg-5">
-                            <div class="simpleCardsContent_block">
-                                <div class="simpleCardsContent_img">
-                                    <img src="images/our_office.jpg" alt="Our offices">
-                                    <div class="simpleCardsContent_overlay"></div>
-                                </div>
-                                <div class="simpleCardsContent_content">
-                                    <div class="simpleCardsContent_text">
-                                        <h4 class="simpleCardsContent_title"><strong>Our offices</strong></h4>
-                                        You’ll find A27Z recycling team members across the globe, with offices in the
-                                        United
-                                        States, Canada, Brazil, UK, Europe, South Korea, Japan, and Australia plus our
-                                        Global Foundation in Thailand.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section class="trusted-and-responsible">
-            <div class="container">
-                <h2 class="section-title">Trusted and Responsible</h2>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-2">
-                        <img class="trust-image" src="images/Trust1.jpg" alt="UKAS">
-                    </div>
-                    <div class="col-12 col-md-2">
-                        <img class="trust-image" src="images/trust2.png" alt="ISO 9001">
-                    </div>
-                    <div class="col-12 col-md-2">
-                        <img class="trust-image" src="images/trust3.png" alt="ISO 9001 Certificate">
-                    </div>
-                    <div class="col-12 col-md-2">
-                        <img class="trust-image" src="images/trust4.png" alt="ISO 14001">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
     <footer class="container">
         <div class="row" id="main_footer">
             <div class="col-md-4 logo-footer">
