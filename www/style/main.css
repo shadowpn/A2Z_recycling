@@ -109,7 +109,6 @@ body {
   margin: 0 100px;
   height: 50px;
   font-size: 20px;
-  border-color: #627329;
   color: #fff;
 }
 .btn.btn-primary:hover{
@@ -323,7 +322,7 @@ body {
     width: 100%; /* Масштабируем изображение по ширине блока */
     height: auto; /* Сохраняем соотношение сторон */
 }
-span {
+.copywriter {
   text-align: center;
   margin-bottom: 15px;
   font-weight: 600;
@@ -524,6 +523,43 @@ span {
 
 /* Чтобы адаптировать размер слайдов для мобильных устройств, добавьте медиа-запросы */
 @media (max-width: 768px) {
+  body {
+    width: 100%;
+    font-size: 16px;
+  }
+  /* Устанавливаем ширину 100% для лого в навбаре */
+/* Стили для лого в навбаре */
+.navbar-brand {
+    width: auto; /* Чтобы лого занимало только необходимое пространство */
+}
+
+/* Стили для кнопки бургер-меню */
+.navbar-toggler {
+    display: block;
+    margin-left: auto; /* Размещаем кнопку бургер-меню справа */
+}
+
+/* Убираем стандартную рамку у элементов меню при клике на них */
+.nav-item:active {
+    outline: none !important;   
+}
+.navbar-toggler:focus {
+    outline: none !important;
+}
+
+/* Стили для элементов меню в раскрывающемся меню */
+.navbar-collapse {
+    text-align: left;
+    margin-left: 50px; /* Пространство слева от меню */
+    padding-top: 30px; /* Пространство сверху от меню */
+}
+/* Стили для отдельных пунктов меню в раскрывающемся меню */
+.nav-item a {
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 500;
+}
+
   .carousel-item {
     width: 100%; /* Измените ширину слайдов для мобильных устройств */
     height: auto; /* Измените высоту слайдов для мобильных устройств */
@@ -532,6 +568,28 @@ span {
     width: 100%; /* Установите ширину блока на 100% на мобильных устройствах */
     margin-bottom: 20px;
   }
+  .col-md-6 h1 {
+    font-size: 28px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .container p {
+    padding: 10px !important;
+    font-size: 16px;
+    margin-left: 0;
+    line-height: 1.6;
+  }
+  .btn.btn-primary {
+    width: 30%;
+    border: #616f32;
+    align-items: center;
+    margin: 10px 0;
+    margin-left: 180px;
+  }
+  .container img {
+    max-width: 60%;
+    height: auto;
+    }
   .col-md-12 {
     padding: 10px; /* Уменьшение отступа на мобильных устройствах */
   }
@@ -540,12 +598,7 @@ span {
     background-color: transparent; /* Уберите цвет фона на мобильных устройствах */
     padding: 10px;
   }
-  h1 {
-    font-size: 20px;
-  }
-  p {
-    font-size: 14px;
-  }
+  
    .rounded-circle-img {
     width: 100px; /* Уменьшите размер контейнера круглых фотографий */
     height: 100px;
