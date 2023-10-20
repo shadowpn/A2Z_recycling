@@ -54,18 +54,18 @@ body {
 }
 /*Video*/
 #myCarousel .carousel-inner {
-    width: 100%;
-    height: 75vh; /* Это устанавливает высоту слайдера на всю высоту экрана */
-    overflow: hidden;
+  width: 100%;
+  height: 75vh; /* Это устанавливает высоту слайдера на всю высоту экрана */
+  overflow: hidden;
 }
 #myCarousel .carousel-item {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 #myCarousel video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* Стили для первого блока - заголовок и текст */
 .col-md-6:nth-child(1) {
@@ -90,7 +90,7 @@ body {
   padding-top: 100px;
   text-align: center;
   padding: 50px 0 50px auto;
-  color:#627329;
+  color: #627329;
 }
 /* Стили для текста описания */
 .container p {
@@ -105,13 +105,13 @@ body {
   border-radius: 30px;
   display: flex;
   justify-content: center; /* Горизонтальное выравнивание по центру */
-  align-items: center; 
+  align-items: center;
   margin: 0 100px;
   height: 50px;
   font-size: 20px;
   color: #fff;
 }
-.btn.btn-primary:hover{
+.btn.btn-primary:hover {
   background-color: #fff;
   color: #627329;
   border-color: #627329;
@@ -145,11 +145,11 @@ body {
   padding-top: 50px;
 }
 .container.text-center.mt-5 {
-  padding-bottom: 40px !important;  
+  padding-bottom: 40px !important;
 }
 .container-fluid.my-5 h2 {
   text-align: center !important;
-  color:#627329;
+  color: #627329;
   font-size: 45px;
 }
 /* Центрирование кнопок "Book Collection" */
@@ -173,11 +173,11 @@ body {
 .container.mt-5 h2 {
   margin-top: 20px;
   margin-bottom: 50px !important;
-  color:#d91e21;
+  color: #d91e21;
   font-size: 45px !important;
 }
 .container.mt-5 h3 {
-  margin-bottom: 30px !important; 
+  margin-bottom: 30px !important;
 }
 /* Стили для изображений */
 .img-fluid {
@@ -185,50 +185,52 @@ body {
   margin: 0 auto;
 }
 .news-content a {
- color:#616f32;
- text-decoration: none;
- font-weight: 600;
+  color: #616f32;
+  text-decoration: none;
+  font-weight: 600;
 }
 .news-content a:hover {
- text-decoration: underline;
- font-weight: 600;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 /* Стили для блока Testimonials */
-  .testimonials {
-    padding: 20px;
-    width: 100%; /* Установите ширину блока в 100% ширины экрана */
-    max-width: none; /* Уберите ограничение максимальной ширины, если оно есть */
-    margin: 50px;
-    padding-bottom: 100px;
-    border-radius: 5px;
-    background: linear-gradient(to right, #fff, #b0c3a4);
+.testimonials {
+  padding: 20px;
+  width: 100%; /* Установите ширину блока в 100% ширины экрана */
+  max-width: none; /* Уберите ограничение максимальной ширины, если оно есть */
+  margin: 50px;
+  padding-bottom: 100px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #fff, #b0c3a4);
 }
 .testimonial-card {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #333; /* Добавляем бордер к карточке */
-    border-radius: 10px; /* Закругляем углы */
-    background-color: #fff;
-     /* Устанавливаем фоновый цвет карточки */   
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #333; /* Добавляем бордер к карточке */
+  border-radius: 10px; /* Закругляем углы */
+  background-color: #fff;
+  /* Устанавливаем фоновый цвет карточки */
 }
-.testimonials h2, .news-container h2, .trusted-and-responsible h2 {
-    font-size: 45px !important;
-    color: #627329 !important;
-    margin-top: 30px;
-    padding-bottom: 20px;
+.testimonials h2,
+.news-container h2,
+.trusted-and-responsible h2 {
+  font-size: 45px !important;
+  color: #627329 !important;
+  margin-top: 30px;
+  padding-bottom: 20px;
 }
 /* Стили для текста внутри блока Testimonials */
-.testimonial-card p {  
-    color: #333;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    margin: 0;
-    padding-bottom: 50px;
-    overflow: hidden;
+.testimonial-card p {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 50px;
+  overflow: hidden;
 }
 .footer-logo img {
   padding-left: 50px;
@@ -236,116 +238,115 @@ body {
 }
 /* Убрать подчеркивание и изменить цвет при наведении на ссылки */
 .links-menu ul li a {
-    text-decoration: none;
-    color: #333; /* Цвет ссылок по умолчанию */
-    transition: color 0.3s; /* Плавное изменение цвета при наведении */
-    font-size: 20px;
-    margin-left: 75px;
-  }
+  text-decoration: none;
+  color: #333; /* Цвет ссылок по умолчанию */
+  transition: color 0.3s; /* Плавное изменение цвета при наведении */
+  font-size: 20px;
+  margin-left: 75px;
+}
 .links-menu ul li a:hover {
-    color: #326c05;
-    text-decoration: underline; /* Новый цвет при наведении */
+  color: #326c05;
+  text-decoration: underline; /* Новый цвет при наведении */
 }
 /* Убрать маркеры списков */
 .links-menu ul {
-    list-style: none;
-    padding: 0; /* Убрать внутренние отступы */  
-  }
+  list-style: none;
+  padding: 0; /* Убрать внутренние отступы */
+}
 /* Создать равное расстояние между иконками социальных сетей */
 .social {
-    display: flex; /* Сделать контейнер flex-контейнером */
-    justify-content: space-evenly; /* Равное распределение между элементами */  
-  }
+  display: flex; /* Сделать контейнер flex-контейнером */
+  justify-content: space-evenly; /* Равное распределение между элементами */
+}
 /* Выравнивание иконок по центру */
 .social a {
-    justify-items: center;
-    padding: 20px 0;
+  justify-items: center;
+  padding: 20px 0;
 }
 /* Отступы от списков и соцсетей */
 .links-menu ul,
 .social {
-    margin: 0; /* Убрать внешние отступы */
-    padding: 0; /* Убрать внутренние отступы */
+  margin: 0; /* Убрать внешние отступы */
+  padding: 0; /* Убрать внутренние отступы */
 }
 /* Стили для иконок социальных сетей */
 .social a img {
-    width: 30px; /* Задать ширину иконок */
-    height: 30px; /* Задать высоту иконок */
+  width: 30px; /* Задать ширину иконок */
+  height: 30px; /* Задать высоту иконок */
 }
 .col-md-4.contact-us p {
- padding: 0;
- font-size: 18px;
+  padding: 0;
+  font-size: 18px;
 }
 /* Стили для новостного контейнера */
 .news-container {
-    width: 80%; /* Ширина блока меньше основного контейнера */
-    margin: 0 auto; /* Центрирование блока */
+  width: 80%; /* Ширина блока меньше основного контейнера */
+  margin: 0 auto; /* Центрирование блока */
 }
 /* Стили для новостного контейнера */
 .news-container {
-    width: 80%; /* Ширина блока меньше основного контейнера */
-    margin: 0 auto; /* Центрирование блока */
+  width: 80%; /* Ширина блока меньше основного контейнера */
+  margin: 0 auto; /* Центрирование блока */
 }
 /* Стили для новостных блоков */
 .news-block {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .news-image {
-    flex: 1;
-    max-width: 25%; /* Ширина изображения - 1/4 блока */
+  flex: 1;
+  max-width: 25%; /* Ширина изображения - 1/4 блока */
 }
 .news-content {
-    flex: 3; /* Остальная ширина блока */
-    padding: 10px;
+  flex: 3; /* Остальная ширина блока */
+  padding: 10px;
 }
 /* Стили для горизонтальной линии между блоками */
 .news-divider {
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-    border: none;
-    margin: 20px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  margin: 20px 0;
 }
 /* Стили для изображений в новостных блоках */
 .news-image {
-    width: 200px; /* Фиксированная ширина блока для изображения */
-    height: 200px; /* Фиксированная высота блока для изображения */
-    display: inline-block; /* Позволяет элементам размещаться горизонтально */
-    vertical-align: top; /* Размещение блоков в верхней части контейнера */
-    margin-right: 10px; /* Расстояние между блоками */
-    overflow: hidden; /* Обрезаем изображение, если оно больше блока */
-    box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+  width: 200px; /* Фиксированная ширина блока для изображения */
+  height: 200px; /* Фиксированная высота блока для изображения */
+  display: inline-block; /* Позволяет элементам размещаться горизонтально */
+  vertical-align: top; /* Размещение блоков в верхней части контейнера */
+  margin-right: 10px; /* Расстояние между блоками */
+  overflow: hidden; /* Обрезаем изображение, если оно больше блока */
+  box-sizing: border-box; /* Учитываем padding и border в общей ширине */
 }
 .news-image img {
-    width: 100%; /* Масштабируем изображение по ширине блока */
-    height: auto; /* Сохраняем соотношение сторон */
+  width: 100%; /* Масштабируем изображение по ширине блока */
+  height: auto; /* Сохраняем соотношение сторон */
 }
 .copywriter {
   text-align: center;
   margin-bottom: 15px;
   font-weight: 600;
 }
-.col-md-4.contact-us a
-{
+.col-md-4.contact-us a {
   color: #323a2b;
   font-weight: 600;
   text-decoration: none;
 }
 .col-md-4.contact-us P {
-   margin-bottom: 10px;   
+  margin-bottom: 10px;
 }
 /* Style for the "About Us" section */
 .about-us {
-    background-color: #f0f0f0;   
+  background-color: #f0f0f0;
 }
 .about-us h1 {
   padding-top: 30px;
   margin-bottom: 30px;
 }
 .about-us p {
-  padding-bottom: 50px
+  padding-bottom: 50px;
 }
 .simpleCardsContent_item {
   display: flex;
@@ -379,7 +380,12 @@ body {
   object-fit: cover; /* Заполнение всей площади изображения */
 }
 .simpleCardsContent_content {
-  background-color: rgba(255, 255, 255, 0.9); /* Прозрачный белый фон для текстового блока */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Прозрачный белый фон для текстового блока */
   padding: 25px; /* Поля вокруг текстового блока */
   text-align: left; /* Выравнивание текста по левому краю блока */
   width: 80%; /* Ширина текстового блока чуть меньше блока с фотографией */
@@ -389,76 +395,75 @@ body {
 }
 /*Block trust and resposible*/
 .trusted-and-responsible {
-    background-color: #f7f7f7;
-    padding: 40px 0;
-    margin-bottom: 30px;
+  background-color: #f7f7f7;
+  padding: 40px 0;
+  margin-bottom: 30px;
 }
 .trusted-and-responsible .section-title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 .trusted-and-responsible .row {
-    display: flex;
-    justify-content: center; /* Выравнивание элементов по центру по горизонтали */
-    align-items: center; /* Выравнивание элементов по центру по вертикали */
+  display: flex;
+  justify-content: center; /* Выравнивание элементов по центру по горизонтали */
+  align-items: center; /* Выравнивание элементов по центру по вертикали */
 }
 .trusted-and-responsible .col-12 {
-    flex: 0 0 auto; /* Оставить ширину элемента по его содержимому */
-    margin: 10px; /* Небольшие отступы между изображениями */
+  flex: 0 0 auto; /* Оставить ширину элемента по его содержимому */
+  margin: 10px; /* Небольшие отступы между изображениями */
 }
 .trusted-and-responsible img.trust-image {
-    max-width: 100%; /* Гарантировать, что изображение не будет превышать ширину родительской колонки */
-    height: auto; /* Поддерживать пропорции при изменении ширины */
-    object-fit: cover; /* Заполнение всей области изображения */
-    display: block; /* Убрать лишние промежутки вокруг изображения */
+  max-width: 100%; /* Гарантировать, что изображение не будет превышать ширину родительской колонки */
+  height: auto; /* Поддерживать пропорции при изменении ширины */
+  object-fit: cover; /* Заполнение всей области изображения */
+  display: block; /* Убрать лишние промежутки вокруг изображения */
 }
 /*Block what we recycling */
 .textWithImage {
-    display: flex;
-    align-items: center;
-    padding: 40px 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 100%);
 }
 .textWithImage_container {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin-left: 250px;
-    border-radius: 20px;
-    background: linear-gradient(to right, #fff, #b0c3a4);
-    /* Устанавливаем фиксированные размеры для блока */
-    width: 1457px; /* Ширина блока */
-    height: 441px; /* Высота блока */
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-left: 250px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #fff, #b0c3a4);
+  /* Устанавливаем фиксированные размеры для блока */
+  width: 1457px; /* Ширина блока */
+  height: 441px; /* Высота блока */
 }
 .textWithImage_media {
-    flex: 0 0 541px; /* Фиксированная ширина изображения */
-    height: 334px; /* Высота изображения */
-    overflow: hidden; /* Обрезаем изображение, если оно превышает размер контейнера */
+  flex: 0 0 541px; /* Фиксированная ширина изображения */
+  height: 334px; /* Высота изображения */
+  overflow: hidden; /* Обрезаем изображение, если оно превышает размер контейнера */
 }
 .textWithImage_media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Заполнение всей области изображения без искажений */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполнение всей области изображения без искажений */
 }
 .textWithImage_img {
   padding-left: 100px;
- 
 }
 .textWithImage_text {
-    flex: 1;
-    max-width: 555px; /* Максимальная ширина текстового блока */
-    padding: 0 50px;
-    color: #627329; 
+  flex: 1;
+  max-width: 555px; /* Максимальная ширина текстового блока */
+  padding: 0 50px;
+  color: #627329;
 }
 .textWithImage_title {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 .textWithImage_body {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 .textWithImage_button {
   align-items: center;
@@ -466,7 +471,7 @@ body {
   border-radius: 30px;
   display: flex;
   justify-content: center; /* Горизонтальное выравнивание по центру */
-  align-items: center; 
+  align-items: center;
   margin: 0 100px;
   height: 50px;
   font-size: 20px;
@@ -488,9 +493,9 @@ body {
 .col-md-6 p {
   font-size: 20px;
   text-align: left;
-  margin-bottom: 0;  
+  margin-bottom: 0;
 }
-.col-md-6 a{
+.col-md-6 a {
   color: #627329;
 }
 .address li {
@@ -509,17 +514,18 @@ body {
 
 /*Banner industrial*/
 .banner {
-    width: 100%;
-    height: 250px; /* Установите желаемую высоту */
-    overflow: hidden;
-    margin-bottom: 30px;
+  width: 100%;
+  height: 250px; /* Установите желаемую высоту */
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 .banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Обрезать изображение, сохраняя пропорции */
-    display: block;   
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Обрезать изображение, сохраняя пропорции */
+  display: block;
 }
+
 
 /* Чтобы адаптировать размер слайдов для мобильных устройств, добавьте медиа-запросы */
 @media (max-width: 768px) {
@@ -528,38 +534,37 @@ body {
     font-size: 16px;
   }
   /* Устанавливаем ширину 100% для лого в навбаре */
-/* Стили для лого в навбаре */
-.navbar-brand {
+  /* Стили для лого в навбаре */
+  .navbar-brand {
     width: auto; /* Чтобы лого занимало только необходимое пространство */
-}
+  }
 
-/* Стили для кнопки бургер-меню */
-.navbar-toggler {
+  /* Стили для кнопки бургер-меню */
+  .navbar-toggler {
     display: block;
     margin-left: auto; /* Размещаем кнопку бургер-меню справа */
-}
+  }
 
-/* Убираем стандартную рамку у элементов меню при клике на них */
-.nav-item:active {
-    outline: none !important;   
-}
-.navbar-toggler:focus {
+  /* Убираем стандартную рамку у элементов меню при клике на них */
+  .nav-item:active {
     outline: none !important;
-}
+  }
+  .navbar-toggler:focus {
+    outline: none !important;
+  }
 
-/* Стили для элементов меню в раскрывающемся меню */
-.navbar-collapse {
+  /* Стили для элементов меню в раскрывающемся меню */
+  .navbar-collapse {
     text-align: left;
     margin-left: 50px; /* Пространство слева от меню */
     padding-top: 30px; /* Пространство сверху от меню */
-}
-/* Стили для отдельных пунктов меню в раскрывающемся меню */
-.nav-item a {
+  }
+  /* Стили для отдельных пунктов меню в раскрывающемся меню */
+  .nav-item a {
     font-size: 20px;
     line-height: normal;
     font-weight: 500;
-}
-
+  }
   .carousel-item {
     width: 100%; /* Измените ширину слайдов для мобильных устройств */
     height: auto; /* Измените высоту слайдов для мобильных устройств */
@@ -589,7 +594,51 @@ body {
   .container img {
     max-width: 60%;
     height: auto;
-    }
+  }
+  /* Уменьшаем размер фотографии */
+  .rounded-circle-container img {
+    max-width: 220px;
+    height: 220px;
+  }
+  .container-fluid.my-5 h2 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .container-fluid.py-3 {
+    background: linear-gradient(to right, #fff, #b0c3a4) !important;
+  }
+  /* Уменьшаем размер заголовка и кнопки "Book Collect" */
+  h3.text-center-block {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .container-fluid {
+    margin-bottom: 0;
+    border: none;
+  }
+  .btn.btn-primary.btn-book-collection {
+    font-size: 14px;
+    padding: 13px;
+    margin: auto !important;
+
+    width: 60%;
+    text-align: center !important;
+  }
+  .rounded-circle-container {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 0;
+  }
+  .container.text-center.mt-5 {
+    margin-top: 20px !important;
+  }
+  /* Устанавливаем блоки в 2x2 на мобильной версии */
+  .col-md-3.col-6.text-center {
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+  }
   .col-md-12 {
     padding: 10px; /* Уменьшение отступа на мобильных устройствах */
   }
@@ -598,20 +647,111 @@ body {
     background-color: transparent; /* Уберите цвет фона на мобильных устройствах */
     padding: 10px;
   }
-  
-   .rounded-circle-img {
-    width: 100px; /* Уменьшите размер контейнера круглых фотографий */
-    height: 100px;
-  }
-
-  h3 {
-    font-size: 18px; /* Уменьшите размер шрифта для заголовков */
-  }
-
-  .btn-book-collection,
   .btn-read-more {
-    font-size: 14px; /* Уменьшите размер шрифта для кнопок */
-    padding: 8px 16px; /* Уменьшите отступы внутри кнопок */
-    margin-top: 10px; /* Уменьшите отступ сверху для кнопок */
+    margin-top: 10px !important;
   }
+  .container.mt-5 h2,
+  .news-container h2, .testimonials h2 {
+    font-size: 26px !important;
+    font-weight: 600 !important;
+    margin-bottom: 30px !important;
+  }
+  .container.mt-5 h3 {
+    font-weight: 600 !important;
+    font-size: 20px !important;
+  }
+  br {
+    display: none;
+  }
+  .testimonials h2,
+  .news-container h2,
+  .trusted-and-responsible h2 {
+    padding-bottom: 0 !important;
+  }
+.news-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+    }  
+.news-container h4 {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+.news-container p {
+  text-align: justify;
+}
+   
+.news-image img {
+  display: none;
+}
+.news-content {
+  padding: 10px; /* Добавляем отступы для контента для лучшей читаемости */
+}
+.testimonials {
+  margin: 0 !important;
+  padding-bottom: 20px;
+}
+.testimonial-card {
+  margin: 5px 0 !important;
+}
+/*Footer*/
+  /* Лого горизонтально слева */
+    .logo-footer {
+        float: left;
+    }
+    .footer-logo img {
+        display: none;
+    }
+    /* Блок с ссылками вертикально справа */
+    .links-menu {
+        float: left;
+        text-align: left;
+    }
+    .links-menu ul {
+        padding: 0;
+        list-style: none;
+    }
+    .links-menu ul li {
+        display: block;
+        margin-bottom: 10px;        
+    }
+    .links-menu a {
+      font-size: 18px !important;
+    }
+
+    /* Адрес внизу по центру */
+.contact-us {
+        text-align: center;
+        clear: both;
+        margin-top: 20px;
+    }
+.col-md-4.contact-us {
+  margin: 0;
+  margin-left: 65px;
+}
+.address p {
+        margin: 0 !important;
+        line-height: 1em;
+        text-align: left;
+    }
+.social {
+   /* Убрать внутренние отступы */
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* Стили для иконок социальных сетей */
+.social a img {
+  width: 45px; /* Задать ширину иконок */
+  height: 30px; /* Задать высоту иконок */
+}
+
+/* Копирайт внизу по центру */
+.copywriter {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        clear: both;
+        font-size: 12px !important;
+    }
 }
