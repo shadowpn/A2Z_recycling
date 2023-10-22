@@ -369,16 +369,19 @@ body {
 .simpleCardsContent_img {
   width: 100%;
   padding-bottom: 75%; /* Сохранение пропорций изображений (4:3) */
+  object-fit: cover;
   overflow: hidden;
   position: relative;
   margin-bottom: -20px; /* Небольшие отступы между блоками */
+  height: auto; /* Установите высоту на автоматический рассчет */
 }
 .simpleCardsContent_img img {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Заполнение всей площади изображения */
+  width: 100%; /* Установите желаемую ширину, например, 300px */
+  height: 200px; /* Установите желаемую высоту, например, 200px */
+  object-fit: cover;
 }
+
 .simpleCardsContent_content {
   background-color: rgba(
     255,
@@ -573,12 +576,12 @@ body {
     width: 100%; /* Установите ширину блока на 100% на мобильных устройствах */
     margin-bottom: 20px;
   }
-  .col-md-6 h1 {
+  .col-md-6 h1, .about-us h1 {
     font-size: 28px;
     padding-top: 20px;
     margin-bottom: 10px;
   }
-  .container p {
+  .container p, .about-us p {
     padding: 10px !important;
     font-size: 16px;
     margin-left: 0;
@@ -651,7 +654,7 @@ body {
     margin-top: 10px !important;
   }
   .container.mt-5 h2,
-  .news-container h2, .testimonials h2 {
+  .news-container h2, .testimonials h2, .trusted-and-responsible h2 {
     font-size: 26px !important;
     font-weight: 600 !important;
     margin-bottom: 30px !important;
@@ -665,7 +668,8 @@ body {
   }
   .testimonials h2,
   .news-container h2,
-  .trusted-and-responsible h2 {
+  .trusted-and-responsible h2
+   {
     padding-bottom: 0 !important;
   }
 .news-block {
@@ -678,7 +682,7 @@ body {
   font-size: 18px !important;
   font-weight: 600 !important;
 }
-.news-container p {
+.news-container p, .about-us p {
   text-align: justify;
 }
    
@@ -745,7 +749,6 @@ body {
   width: 45px; /* Задать ширину иконок */
   height: 30px; /* Задать высоту иконок */
 }
-
 /* Копирайт внизу по центру */
 .copywriter {
         display: block;
@@ -754,4 +757,65 @@ body {
         clear: both;
         font-size: 12px !important;
     }
+/*About us */
+.carousel-item.active img {
+  width: 100%;
+  height: 338px;/* Установите высоту 100%, чтобы изображение занимало всю высоту блока */
+  object-fit: cover; /* Заполнение всей площади блока изображением, сохраняя пропорции */
+  overflow: hidden;
+  position: relative;
+  padding-bottom: -200px !important;   
+}
+.carousel-inner {
+  height: 338px !important;
+}
+/* Стили для адаптации фотографий в блоках "Our Mission and Vision", "Careers" и "Our Offices" */
+.simpleCardsContent_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px; /* Установите отступ между блоками */
+        padding-top: 10px !important;
+      }
+
+    .simpleCardsContent_block {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px; /* Небольшие отступы между блоками */
+        text-align: center; /* Выравнивание текста по центру */
+        border-radius: 20px;
+    }
+
+    .simpleCardsContent_img {
+        width: 100%;
+        padding-bottom: 75%; /* Сохранение пропорций изображений (4:3) */
+        overflow: hidden;
+        position: relative;
+    }
+
+    .simpleCardsContent_img img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Заполнение всей площади изображения */
+    }
+
+    .simpleCardsContent_content {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px; /* Поля вокруг текстового блока */
+        text-align: center; /* Выравнивание текста по центру */
+        border-radius: 20px;
+    }
+
+/* Стили для адаптации фотографий в блоке "Trusted and Responsible" */
+.trust-image {
+    width: 90%;
+    height: auto;
+    align-items: center;
+    padding-left: 40px;
+}
+.trusted-and-responsible {
+  padding-top: 5px;
+}
 }

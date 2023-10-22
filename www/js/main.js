@@ -1,5 +1,4 @@
-
-  $(document).ready(function() {
+$(document).ready(function() {
     // Инициализация карусели
     $("#carouselInterval").carousel({
       interval: 3000, // Интервал между перелистываниями в миллисекундах (например, 3000 мс = 3 секунды)
@@ -45,7 +44,6 @@
           maxHeight = currentHeight; // Обновить максимальную высоту, если текущая высота больше
         }
       });
-
       // Установить максимальную высоту для всех элементов .simpleCardsContent_content
       contentBlocks.css("height", maxHeight + "px");
     });
