@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,7 +73,7 @@
                             with no hidden fees or
                             charges, making waste management easy and stress-free for your construction or industrial
                             project.</p>
-                        <a href="contact_us.html" class="btn btn-primary">Contact us</a>
+                        <a href="contact_us.html#inquiryForm" class="btn btn-primary">Contact us</a>
                     </div>
                     <!-- Второй блок - контейнер с фотографией -->
                     <div class="col-md-6">
@@ -95,7 +94,7 @@
                         <img src="images/print_cartrige.jpeg" alt="Printer cartridges" class="img-fluid rounded-circle">
                     </div>
                     <h3 class="text-center-block">Printer cartridges</h3>
-                    <a href="contact_us.html" class="btn btn-primary btn-book-collection">Book collection</a>
+                    <a href="contact_us.html#inquiryForm" class="btn btn-primary btn-book-collection">Book collection</a>
                 </div>
                 <div class="col-md-3 col-6 text-center">
                     <div class="rounded-circle-container">
@@ -103,14 +102,14 @@
                             class="img-fluid rounded-circle">
                     </div>
                     <h3 class="text-center-block">Batteries</h3>
-                    <a href="contact_us.html" class="btn btn-primary btn-book-collection">Book collection</a>
+                    <a href="contact_us.html#inquiryForm" class="btn btn-primary btn-book-collection">Book collection</a>
                 </div>
                 <div class="col-md-3 col-6 text-center">
                     <div class="rounded-circle-container">
                         <img src="images/bins.jpeg" alt="Bins" class="img-fluid rounded-circle">
                     </div>
                     <h3 class="text-center-block">Bins</h3>
-                    <a href="contact_us.html" class="btn btn-primary btn-book-collection">Book collection</a>
+                    <a href="contact_us.html#inquiryForm" class="btn btn-primary btn-book-collection">Book collection</a>
                 </div>
                 <div class="col-md-3 col-6 text-center">
                     <div class="rounded-circle-container">
@@ -118,7 +117,7 @@
                             class="img-fluid rounded-circle">
                     </div>
                     <h3 class="text-center-block">Lamps</h3>
-                    <a href="contact_us.html" class="btn btn-primary btn-book-collection">Book collection</a>
+                    <a href="contact_us.html#inquiryForm" class="btn btn-primary btn-book-collection">Book collection</a>
                 </div>
             </div>
             <div class="container text-center mt-5">
@@ -134,8 +133,7 @@
                         <h3>No bagged <br> recyclables</h3>
                         <img src="images/download.jpeg" alt="bag recyclables" class="img-fluid">
                         <p>Do not bag recyclables. They must be loose in the bin. If you collect your recyclables in a
-                            bag, empty them directly
-                            into your bin and reuse the bag!</p>
+                            bag, empty them directly into your bin and reuse the bag!</p>
                     </div>
                 </div>
                 <!-- Второй блок -->
@@ -144,8 +142,7 @@
                         <h3>No polystyrene foam <br> & plastic</h3>
                         <img src="images/images.jpeg" alt="Polystyrene foam" class="img-fluid">
                         <p>Polystyrene foam, plastic "to-go" containers and cups are made of non-recyclable materials,
-                            and are not acceptable in
-                            the curbside recycling program.</p>
+                            and are not acceptable in the curbside recycling program.</p>
                     </div>
                 </div>
                 <!-- Третий блок -->
@@ -223,7 +220,6 @@
             </div>
             <hr>
         </div>
-
         <div class="container">
             <div class="testimonials">
                 <h2 class="text-center">Testimonials</h2>
@@ -267,8 +263,7 @@
         <img src="images/can_i_recycle_header.png" alt="can I recycle">
     </section>
     <footer class="container">
-        <div class="row" id="main_footer">
-            
+        <div class="row" id="main_footer">          
             <div class="col-md-4 logo-footer">
                 <a class="footer-logo" href="index.html"><img src="images/Logo_small.jpg" height="120"
                         alt="logo footer"></a>
@@ -291,7 +286,6 @@
                     </a>
                 </div>
             </div>
-            
             <div class="col-md-4 contact-us">
                 <address class="address">
                     <p><strong>Email:</strong> <a href="mailto:info@a27zrecycling.com.au"> info@a27z.com.au</a></p>
@@ -310,5 +304,18 @@
         integrity="sha384-hz07T2sjA5Pz4JZf+ibCb8AyfF8r+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[href="#inquiryForm"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
 </body>
 </html>

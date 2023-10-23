@@ -100,23 +100,23 @@ body {
   margin-left: 40px;
 }
 .btn.btn-primary {
-  align-items: center;
+  align-items: center !important;
   background-color: #627329;
   border-radius: 30px;
   display: flex;
   justify-content: center; /* Горизонтальное выравнивание по центру */
-  align-items: center;
-  margin: 0 100px;
+  margin-left: 170px;
   height: 50px;
   font-size: 20px;
   color: #fff;
+  border-color: #627329;
+  width: 50%;
 }
 .btn.btn-primary:hover {
   background-color: #fff;
   color: #627329;
   border-color: #627329;
 }
-
 /* Стили для круглых фотографий */
 .rounded-circle-container {
   width: 350px; /* Задайте желаемую ширину и высоту для контейнера круглых фотографий */
@@ -163,7 +163,7 @@ body {
   margin: 0 auto !important;
   display: block !important;
   margin-top: 50px !important; /* Увеличьте отступ сверху для кнопки "Read more" */
-  width: 200px;
+  width: 150px !important;
 }
 /*все для блока "We not accept*/
 .text-center {
@@ -193,7 +193,6 @@ body {
   text-decoration: underline;
   font-weight: 600;
 }
-
 /* Стили для блока Testimonials */
 .testimonials {
   padding: 20px;
@@ -381,7 +380,6 @@ body {
   height: 200px; /* Установите желаемую высоту, например, 200px */
   object-fit: cover;
 }
-
 .simpleCardsContent_content {
   background-color: rgba(
     255,
@@ -480,6 +478,7 @@ body {
   font-size: 20px;
   border-color: #627329;
   color: #fff;
+  text-decoration: none;
 }
 .textWithImage_button:hover {
   background-color: #fff;
@@ -514,7 +513,6 @@ body {
   margin: 20px auto;
   max-width: 100%;
 }
-
 /*Banner industrial*/
 .banner {
   width: 100%;
@@ -528,8 +526,9 @@ body {
   object-fit: cover; /* Обрезать изображение, сохраняя пропорции */
   display: block;
 }
-
-
+.form-control {
+  margin-bottom: 20px;
+}
 /* Чтобы адаптировать размер слайдов для мобильных устройств, добавьте медиа-запросы */
 @media (max-width: 768px) {
   body {
@@ -541,13 +540,11 @@ body {
   .navbar-brand {
     width: auto; /* Чтобы лого занимало только необходимое пространство */
   }
-
   /* Стили для кнопки бургер-меню */
   .navbar-toggler {
     display: block;
     margin-left: auto; /* Размещаем кнопку бургер-меню справа */
   }
-
   /* Убираем стандартную рамку у элементов меню при клике на них */
   .nav-item:active {
     outline: none !important;
@@ -555,7 +552,6 @@ body {
   .navbar-toggler:focus {
     outline: none !important;
   }
-
   /* Стили для элементов меню в раскрывающемся меню */
   .navbar-collapse {
     text-align: left;
@@ -624,7 +620,6 @@ body {
     font-size: 14px;
     padding: 13px;
     margin: auto !important;
-
     width: 60%;
     text-align: center !important;
   }
@@ -672,150 +667,184 @@ body {
    {
     padding-bottom: 0 !important;
   }
-.news-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-    }  
-.news-container h4 {
-  font-size: 18px !important;
-  font-weight: 600 !important;
-}
-.news-container p, .about-us p {
-  text-align: justify;
-}
-   
-.news-image img {
-  display: none;
-}
-.news-content {
-  padding: 10px; /* Добавляем отступы для контента для лучшей читаемости */
-}
-.testimonials {
-  margin: 0 !important;
-  padding-bottom: 20px;
-}
-.testimonial-card {
-  margin: 5px 0 !important;
-}
-/*Footer*/
+  .news-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+      }  
+  .news-container h4 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+  }
+  .news-container p, .about-us p {
+    text-align: justify;
+  }   
+  .news-image img {
+    display: none;
+  }
+  .news-content {
+    padding: 10px; /* Добавляем отступы для контента для лучшей читаемости */
+  }
+  .testimonials {
+    margin: 0 !important;
+    padding-bottom: 20px;
+  }
+  .testimonial-card {
+    margin: 5px 0 !important;
+  }
+  /*Footer*/
   /* Лого горизонтально слева */
-    .logo-footer {
-        float: left;
+  .logo-footer {
+    float: left;
     }
-    .footer-logo img {
-        display: none;
+  .footer-logo img {
+    display: none;
     }
-    /* Блок с ссылками вертикально справа */
-    .links-menu {
-        float: left;
-        text-align: left;
+  /* Блок с ссылками вертикально справа */
+  .links-menu {
+    float: left;
+    text-align: left;
     }
-    .links-menu ul {
-        padding: 0;
-        list-style: none;
+  .links-menu ul {
+    padding: 0;
+    list-style: none;
     }
-    .links-menu ul li {
-        display: block;
-        margin-bottom: 10px;        
+  .links-menu ul li {
+    display: block;
+    margin-bottom: 10px;        
     }
-    .links-menu a {
-      font-size: 18px !important;
+  .links-menu a {
+    font-size: 18px !important;
     }
-
     /* Адрес внизу по центру */
-.contact-us {
-        text-align: center;
-        clear: both;
-        margin-top: 20px;
+  .contact-us {
+    text-align: center;
+    clear: both;
+    margin-top: 20px;
     }
-.col-md-4.contact-us {
-  margin: 0;
-  margin-left: 65px;
-}
-.address p {
-        margin: 0 !important;
-        line-height: 1em;
-        text-align: left;
+  .col-md-4.contact-us {
+    margin: 0;
+    margin-left: 65px;
+   }
+  .address p {
+    margin: 0 !important;
+    line-height: 1em;
+    text-align: left;
     }
-.social {
+  .social {
    /* Убрать внутренние отступы */
-  align-items: center;
-  justify-content: space-evenly;
-}
-/* Стили для иконок социальных сетей */
-.social a img {
-  width: 45px; /* Задать ширину иконок */
-  height: 30px; /* Задать высоту иконок */
-}
-/* Копирайт внизу по центру */
-.copywriter {
-        display: block;
-        text-align: center;
-        margin-top: 20px;
-        clear: both;
-        font-size: 12px !important;
+    align-items: center;
+    justify-content: space-evenly;
     }
-/*About us */
-.carousel-item.active img {
-  width: 100%;
-  height: 338px;/* Установите высоту 100%, чтобы изображение занимало всю высоту блока */
-  object-fit: cover; /* Заполнение всей площади блока изображением, сохраняя пропорции */
-  overflow: hidden;
-  position: relative;
-  padding-bottom: -200px !important;   
-}
-.carousel-inner {
-  height: 338px !important;
-}
-/* Стили для адаптации фотографий в блоках "Our Mission and Vision", "Careers" и "Our Offices" */
-.simpleCardsContent_item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 20px; /* Установите отступ между блоками */
-        padding-top: 10px !important;
-      }
-
-    .simpleCardsContent_block {
-        position: relative;
-        width: 100%;
-        margin-bottom: 20px; /* Небольшие отступы между блоками */
-        text-align: center; /* Выравнивание текста по центру */
-        border-radius: 20px;
+   /* Стили для иконок социальных сетей */
+  .social a img {
+    width: 45px; /* Задать ширину иконок */
+    height: 30px; /* Задать высоту иконок */
     }
-
-    .simpleCardsContent_img {
-        width: 100%;
-        padding-bottom: 75%; /* Сохранение пропорций изображений (4:3) */
-        overflow: hidden;
-        position: relative;
-    }
-
-    .simpleCardsContent_img img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Заполнение всей площади изображения */
-    }
-
-    .simpleCardsContent_content {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 20px; /* Поля вокруг текстового блока */
-        text-align: center; /* Выравнивание текста по центру */
-        border-radius: 20px;
-    }
-
-/* Стили для адаптации фотографий в блоке "Trusted and Responsible" */
-.trust-image {
+   /* Копирайт внизу по центру */
+  .copywriter {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    clear: both;
+    font-size: 12px !important;
+  }
+  /*About us */
+  .carousel-item.active img {
+    width: 100%;
+    height: 338px;/* Установите высоту 100%, чтобы изображение занимало всю высоту блока */
+    object-fit: cover; /* Заполнение всей площади блока изображением, сохраняя пропорции */
+    overflow: hidden;
+    position: relative;
+    padding-bottom: -200px !important;   
+  }
+  .carousel-inner {
+    height: 338px !important;
+  }
+  /* Стили для адаптации фотографий в блоках "Our Mission and Vision", "Careers" и "Our Offices" */
+  .simpleCardsContent_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px; /* Установите отступ между блоками */
+    padding-top: 10px !important;
+  }
+  .simpleCardsContent_block {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px; /* Небольшие отступы между блоками */
+    text-align: center; /* Выравнивание текста по центру */
+    border-radius: 20px;
+  }
+  .simpleCardsContent_img {
+    width: 100%;
+    padding-bottom: 75%; /* Сохранение пропорций изображений (4:3) */
+    overflow: hidden;
+    position: relative;
+  }
+  .simpleCardsContent_img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполнение всей площади изображения */
+  }
+  .simpleCardsContent_content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px; /* Поля вокруг текстового блока */
+    text-align: center; /* Выравнивание текста по центру */
+    border-radius: 20px;
+ }
+  /* Стили для адаптации фотографий в блоке "Trusted and Responsible" */
+  .trust-image {
     width: 90%;
     height: auto;
     align-items: center;
     padding-left: 40px;
+ }
+ .trusted-and-responsible {
+   padding-top: 5px;
 }
-.trusted-and-responsible {
-  padding-top: 5px;
-}
+ /* Общий стиль для .textWithImage */
+  .textWithImage_container {
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Выравниваем элементы по центру вертикально */
+   text-align: center; /* Выравниваем текст по центру */
+   margin: 0;
+   background: linear-gradient(to right, #fff, #b0c3a4);
+  }
+  .textWithImage_media,
+  .textWithImage_text {
+    width: 100%; /* Растягиваем изображение и текст на всю ширину блока */
+    height: auto;
+    margin: 0 10px !important;
+  }
+  .textWithImage_title {
+    margin-top: 15px; /* Добавляем небольшой отступ между заголовком и текстом */
+  }
+  .textWithImage_text h3 {
+    margin-top: 15px; /* Добавляем небольшой отступ между заголовком и текстом */
+  }
+  .textWithImage_button {
+    margin-top: 15px; /* Добавляем отступ между текстом и кнопкой */
+  }
+  .textWithImage_text img,
+  .textWithImage_media img {
+    order: -1; /* Меняем порядок отображения изображения и текста */
+    width: 100%;
+    padding-left: 0;
+  }
+  .textWithImage_text h3,
+  .textWithImage_media h3 {
+    order: 1; /* Меняем порядок отображения заголовка и текста */
+  }
+  .textWithImage_container:nth-child(odd) 
+  .textWithImage_media {
+    display: none; /* Скрываем каждую вторую фотографию */
+  }
+   .textWithImage_text p {
+    text-align: justify;
+   }
 }

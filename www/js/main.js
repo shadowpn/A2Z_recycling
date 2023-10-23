@@ -68,3 +68,22 @@ window.addEventListener("load", function () {
     img.style.width = maxWidth + "px";
   });
 });
+// Добавьте обработчик события 'resize' для блока textWithImage_media
+window.addEventListener('resize', function () {
+  // Получаем ссылку на изображение
+  var img = document.getElementById("textWithImageImg");
+
+  // Проверяем, сработал ли обработчик загрузки изображения
+  img.addEventListener("load", function () {
+    // Устанавливаем высоту изображения в 300px (или другое значение)
+    img.style.height = "300px";
+
+    // Устанавливаем ширину изображения на 100% родительского контейнера
+    img.style.width = "100%";
+  });
+});
+
+
+
+
+
